@@ -166,6 +166,30 @@
   line-height: 1.6;
 }
 
+/* 이미지 섹션 스타일 */
+.image-section {
+  padding: 2rem 0;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.image-item {
+  text-align: center;
+  padding: 1rem;
+}
+
+.image-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 /* 반응형 디자인 */
 @media (max-width: 48rem) { /* 768px */
   html {
@@ -212,6 +236,12 @@
 
   .section-title {
     font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .image-item img {
+    max-width: 100%;
   }
 }
 
